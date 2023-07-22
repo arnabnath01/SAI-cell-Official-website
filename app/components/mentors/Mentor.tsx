@@ -10,7 +10,7 @@ function Mentor() {
   return (
     <>
       <div className="font-sans lg:px-20 sm:px-10 md:px-10">
-        <h1 className=" text-slate-900 text-center mt-10 text-4xl font-bold CustomFont tracking-tight py-4 underline transition duration-500 ease-out-in transform-gpu hover:scale-110">
+        <h1 className=" text-slate-900 text-center mt-10 text-4xl font-bold CustomFont tracking-tight py-4 underline transition duration-500 ease-out-in transform-gpu hover:text-gray-500">
           Our Alumni Mentor
         </h1>
         {/*================ CODEPEN =======================*/}

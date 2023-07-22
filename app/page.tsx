@@ -1,5 +1,5 @@
 'use client'
-import About from "./about/About"
+import About from "./about/page"
 import Carousel from "./components/Carousel"
 import Mentor from "./components/mentors/Mentor"
 
@@ -10,7 +10,6 @@ const Home = () => {
       <About />
       <Mentor />
     </div>
-
   )
 
 }

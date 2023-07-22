@@ -14,8 +14,6 @@ const page = () => {
 
         </div>
         {/* GLow button */}
-
-
         <center>
           <Link href="/StAMP" target="_blank"><button className="blink ">StAMP Portal</button></Link>
         </center>
@@ -66,16 +64,10 @@ const page = () => {
           <center>
             <Link href="/StAMP" target="_blank"><button className="blink ">StAMP Portal</button></Link>
           </center>
-
-
         </div>
-
       </div>
     </div>
   )
 }
 
 export default page
-
-
-

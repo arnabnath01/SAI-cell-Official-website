@@ -1,4 +1,4 @@
-import About from './about/About'
+import About from './about/page'
 import ClientOnly from './components/ClientOnly'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'

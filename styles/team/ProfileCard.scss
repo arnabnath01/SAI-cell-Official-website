@@ -11,8 +11,7 @@ html, body {
 	height: 100%;
 }
 body {
-	font-family: "Lato", sans-serif;
-	
+	// font-family: "Lato", sans-serif;
 
 	animation: fade-in 3s ease-in-out forwards;
 }
@@ -71,7 +70,7 @@ strong {
 }
 .canvas_img {
 	transform: scale3d(.9,.9,.9);
-	opacity: .3;
+	opacity: 1;
 	max-width: 200px;
 	max-height: 200px;
 }

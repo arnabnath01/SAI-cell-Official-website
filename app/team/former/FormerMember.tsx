@@ -2,7 +2,7 @@
 const FormerMember = () => {
   return (
     <div>
-      formet Member
+      former Member
     </div>
   )
 }

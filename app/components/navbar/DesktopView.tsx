@@ -49,8 +49,8 @@ const DesktopView = () => {
         {/* ***************INITIATIVES************** */}
         <li>
           <Link
-            onClick={handleInitiativeHover}
-            href="/"
+            onMouseOver={handleInitiativeHover}
+            href="#"
             className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500 nav-item"
           >
             Initiatives
@@ -152,11 +152,11 @@ const DesktopView = () => {
         {/* ******PUBLICATION******** */}
         <li>
           <Link
-            onClick={handlePublicationHover}
-            href="/"
+            onMouseOver={handlePublicationHover}
+            href="#"
             className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500 nav-item"
           >
-            <Link href="/"> Publication  </Link>
+            <Link href="#"> Publication  </Link>
           </Link>
 
           {/* AFTER clicking */}
@@ -196,15 +196,10 @@ const DesktopView = () => {
 
                   "><Link href="#">Newsletter</Link>
                   </li>
-                  
-                  <li className="menuClass border border-b-sky-200
-
-                  "><Link href="#">Newsletter</Link>
-                  </li>
-
                   <li className="menuClass border border-b-sky-200 hover:bg-slate-900
+                  ">
+                    <Link href="#">Year book</Link>
 
-                  "><Link href="#">Year book</Link>
                   </li>
 
 

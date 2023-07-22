@@ -53,11 +53,11 @@ const MobileView = () => {
                     <li className="text_effect ml-4 nav-item"><Link href="https://alumnitdgp.in/">Home</Link></li>
 
                     <li className="text_effect nav-item">
-                        <Link href="#">About SAIC </Link>
+                        <Link href="/about">About SAIC </Link>
                     </li>
 
                     <li className="text_effect nav-item"
-                        onMouseOver={handleInitiativeHover}
+                        onClick={handleInitiativeHover}
 
                     >
                         <Link href="#"
@@ -96,8 +96,6 @@ const MobileView = () => {
                                 <li className="menuClass border-b-sky-200
                                 "><Link href="/comming_soon">Student Alumni Meet</Link></li>
                             </ul>
-
-
                         </div>
                     )
 
@@ -121,7 +119,7 @@ const MobileView = () => {
 
                     <li className="text_effect nav-item">
                         <Link className=""
-                            onMouseOver={handlePublicationHover}
+                            onClick={handlePublicationHover}
                             href="#">Publication </Link>
 
                         {onPublicationHover && (

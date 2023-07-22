@@ -7,15 +7,15 @@ interface ProfileCardProps {
   lastname: string;
   role: string;
   imageUrl: string;
-  details:string;
+  details: string;
 }
 
-const ProfileCard: React.FC<ProfileCardProps> = ({ firstname, lastname, role, imageUrl,details }) => {
+const ProfileCard: React.FC<ProfileCardProps> = ({ firstname, lastname, role, imageUrl, details }) => {
   return (
-    <div className="canvas-wrapper">
-      <Link href='#'className="canvas">
+    <div className="canvas-wrapper gap-4 items-center">
+      <Link href='#' className="canvas">
         <div className="canvas_border">
-        <svg>
+          <svg>
             <defs>
               <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" style={{ stopColor: "rgb(253,137,68)", stopOpacity: 1 }}></stop>
@@ -40,7 +40,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ firstname, lastname, role, im
           </svg>
         </div>
         <div className="canvas_img-wrapper">
-      <Image className="canvas_img" src={`${imageUrl}`} alt={`${firstname} ${lastname}`} height={2000} width={1000} /> 
+          <Image className="canvas_img" src={`${imageUrl}`} alt={`${firstname} ${lastname}`} height={2000} width={1000} />
         </div>
         <div className="canvas_copy canvas_copy--left">
           <span className="canvas_copy_subtitle">{role}</span>
