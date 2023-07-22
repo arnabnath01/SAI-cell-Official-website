@@ -1,0 +1,42 @@
+
+
+
+.blink{
+    font-size: 18px;
+color: #fff;
+padding: 20px;
+width: 70%;
+background: linear-gradient(to right, #AE0076 0%, #AE0035 100%);
+animation: blink 2s linear infinite;
+border: none;
+
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  .backgImage{
+    background: url("/StAMP/stampLayout.jpg");
+    background-size: cover;
+  }
+  .container{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'Lato', sans-serif;
+    line-height: 26px;
+    color: #6d6e71;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+    max-width: 1050px;
+
+  }
+

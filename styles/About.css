@@ -1,0 +1,13 @@
+
+.header1{
+    font-family: 'san serif';
+}
+
+.header2{
+    font-family: 'playfair';
+}
+
+.bg{
+    /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background-image: linear-gradient(to right, #870000, #190a05);  
+}
