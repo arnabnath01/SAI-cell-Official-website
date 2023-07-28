@@ -16,6 +16,12 @@ const MobileView = () => {
     const handlePublicationHover = () => {
         setOnPublicationHover(!onPublicationHover);
     }
+
+ 
+        const handleClick = () => {
+          window.open("/ENCORE2020.pdf", '_blank');
+        };
+
     return (
         <div
             className="
@@ -131,14 +137,18 @@ const MobileView = () => {
                     rounded
                     ml-2
                     ">
-                                <ul className="w-">
+                             <ul className="">
                                     <li className="menuClass border-b-sky-200
 
-                                "><Link href="#">Newsletter</Link></li>
+                                ">
+                                    <Link href="#" onClick={handleClick}>Newsletter</Link>
+                                    </li>
 
-                                    <li className="menuClass border-b-sky-200
-                                "><Link href="#">Year Book</Link></li>
-                                </ul>
+                                <li className="menuClass border-b-sky-200
+                                "><Link href="#">Year Book</Link>
+                                </li>
+
+                             </ul>
 
 
                             </div>

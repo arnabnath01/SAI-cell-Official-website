@@ -12,7 +12,7 @@ interface ProfileCardProps {
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ firstname, lastname, role, imageUrl, details }) => {
   return (
-    <div className="canvas-wrapper gap-4 items-center">
+    <div className="canvas-wrapper gap-1 my-4 flex items-center justify-center">
       <Link href='#' className="canvas">
         <div className="canvas_border">
           <svg>
@@ -34,13 +34,13 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ firstname, lastname, role, im
               stroke-linecap="square"
               stroke-width="4"
               stroke-miterlimit="30"
-              width="100%"
-              height="100%"
+              width="50%"
+              height="70%"
             ></rect>
           </svg>
         </div>
-        <div className="canvas_img-wrapper">
-          <Image className="canvas_img" src={`${imageUrl}`} alt={`${firstname} ${lastname}`} height={2000} width={1000} />
+        <div className="flex canvas_img-wrapper justify-center items-center">
+          <Image className="canvas_img" src={`${imageUrl}`} alt={`${firstname} ${lastname}`} height={3000} width={3000} />
         </div>
         <div className="canvas_copy canvas_copy--left">
           <span className="canvas_copy_subtitle">{role}</span>

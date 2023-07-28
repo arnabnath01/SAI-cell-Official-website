@@ -9,66 +9,101 @@ function Footer() {
   return (
     <div>
       {/* =======FOOTER TOP===========*/}
-      <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
+      <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 ">
         <div className="container flex flex-col justify-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 
           <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+
             <Link rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
               <span className="self-center text-2xl font-semibold">
                 <Image src='/logo-pics/logo-black.png' alt="nit dark logo" height={130} width={130} />
               </span>
             </Link>
-            <div className="space-y-3">
-              <h3 className="tracki uppercase dark:text-gray-50">Quick Links</h3>
-              <ul className="space-y-1" >
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Message from</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Coordinator</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Alumni At a Glance</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Alumni Services</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Gallery</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Showcase video</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-3">
-              <h3 className="tracki uppercase dark:text-gray-50">Company</h3>
-              <ul className="space-y-1">
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Privacy</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Terms of Service</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-3">
-              <h3 className="uppercase dark:text-gray-50">Developers</h3>
-              <ul className="space-y-1">
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Public API</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Documentation</Link>
-                </li>
-                <li>
-                  <Link rel="noopener noreferrer" href="#">Guides</Link>
-                </li>
+            <div className="space-y-3 flex flex-col">
+              <h3 className="track uppercase text-orange-600  ">Quick Links</h3>
+              <div>
 
+                <ul className="space-y-1  list-disc list-inside" >
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer"  
+                    href="#">Message from</Link>
+                  </li>
+                  <li>
+                    <Link rel="noopener noreferrer" className="hover:underline" href="#">Coordinator</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Alumni At a Glance</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Alumni Services</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Gallery</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Showcase video</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-3 text-orange-600">FOR ALUMNI</h3>
+                <ul className="space-y-1 list-disc list-inside" >
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Signup or Registration</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">login for existing User</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Donation / giving back</Link>
+                  </li>
+                  <li className="hover:underline">
+                    <Link rel="noopener noreferrer" href="#">Send Invitation</Link>
+                  </li>
+
+                </ul>
+              </div>
+
+
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-orange-600">FOR ALUMNI</h3>
+              <ul className="space-y-1 list-disc list-inside">
+                <li className="hover:underline">
+                  <Link rel="noopener noreferrer" href="#">Signup or Registration</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link rel="noopener noreferrer" href="#">Login for existing User</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link rel="noopener noreferrer" href="#">Donation / giving back</Link>
+                </li>
+                <li className="hover:underline">
+                  <Link rel="noopener noreferrer" href="#">Send Invitation</Link>
+                </li>
               </ul>
             </div>
-            <div className="space-y-1  ">
-              <div className="uppercase dark:text-gray-50">Social media</div>
+            <div className="space-y-3">
+              <h3 className="uppercase text-orange-600">CONTACT us</h3>
+              <div className="max-md:flex flex-col">
+                <div className="mb-4">
+                  <h3 className="text-orange-600">MAIL</h3>
+                 <Link href="#">alumni@admin.nitdgp.ac.in</Link>
+                </div>
+              <hr />
+                <div className="mt-4">
+                  <h3 className="text-orange-600">LOCATION</h3>
+                 <p className=" my-6 text-justify">Centre for Alumni Affairs & International Relations(C-AAIR)
+2nd Floor, S. N. Ray Memorial Building
+NIT Durgapur. <br />
+Durgapur-713209,<br /> West Bengal, INDIA</p>
+                </div>
+                
+              </div>
+            
+            </div>
+            <div className="space-y-1 justify-center ">
+              <div className="uppercase text-orange-600 ">Social media</div>
               <div className="flex justify-start space-x-3">
                 <Link rel="noopener noreferrer" href="https://www.facebook.com/saic.nitd" title="Facebook" className="flex items-center p-1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">

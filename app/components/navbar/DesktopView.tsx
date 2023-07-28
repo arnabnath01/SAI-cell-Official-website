@@ -15,6 +15,9 @@ const DesktopView = () => {
     setOnPublicationHover(!onPublicationHover);
   }
 
+  const handleClick = () => {
+    window.open("@/public/ENCORE2020.pdf", '_blank');
+  };
 
   return (
     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -49,7 +52,9 @@ const DesktopView = () => {
         {/* ***************INITIATIVES************** */}
         <li>
           <Link
-            onMouseOver={handleInitiativeHover}
+           
+            onMouseEnter={()=>setOnInitiativeHover(true)}
+            onMouseLeave={()=>setOnInitiativeHover(false)}
             href="#"
             className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500 nav-item"
           >
@@ -59,6 +64,8 @@ const DesktopView = () => {
           {/* ****After Hovering********* */}
           {onInitiativeHover && (
             <div
+            onMouseEnter={()=>setOnInitiativeHover(true)}
+            onMouseLeave={()=>setOnInitiativeHover(false)}
               className="
                       absolute
                       bg-yellow-400
@@ -87,7 +94,7 @@ const DesktopView = () => {
                 <ul className="w-full">
                   <li className="menuClass border-b-sky-200
 
-                                "><Link href="/StAMP">Student Alumni Mentorship Programme (StAMP)</Link></li>
+                                "><Link href="/StAMP">Student Alumni Mentorship Programme(StAMP)</Link></li>
 
                   <li className="menuClass border-b-sky-200
                                 "><Link href="/AIM">Alumni Internship Mentorship (AIM)</Link></li>
@@ -111,48 +118,15 @@ const DesktopView = () => {
           )
 
           }
-          {/* {onInitiativeHover && (
-                        <div className="
-                        flex
-                        flex-col
-                        w-1/2
-                    bg-black/60 
-                    rounded
-                    ml-2
-                    ">
-                            <ul className="w-full">
-                                <li className="menuClass border-b-sky-200
-
-                                "><Link href="/StAMP">Student Alumni Mentorship Programme (StAMP)</Link></li>
-
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/AIM">Alumni Internship Mentorship (AIM)</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/ARC">Alumni Recruit Connect (ARC)</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/comming_soon">NITDian branding</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/comming_soon">NITDian brand store</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/comming_soon">NITDian campus tour</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/comming_soon">Alumni Grand Meet</Link></li>
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="/comming_soon">Student Alumni Meet</Link></li>
-                            </ul>
-
-
-                        </div>
-                    )
-
-                    } */}
+          
 
         </li>
 
         {/* ******PUBLICATION******** */}
         <li>
           <Link
-            onMouseOver={handlePublicationHover}
+            onMouseEnter={()=>setOnPublicationHover(true)}
+            onMouseLeave={()=>setOnPublicationHover(false)}
             href="#"
             className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500 nav-item"
           >
@@ -164,9 +138,10 @@ const DesktopView = () => {
 
           {onPublicationHover && (
             <div
+            onMouseEnter={()=>setOnPublicationHover(true)}
+            onMouseLeave={()=>setOnPublicationHover(false)}
               className="
           absolute
-         
           rounded-md
           shadow-md
           w-[130px]
@@ -193,13 +168,11 @@ const DesktopView = () => {
                 <ul className="w-full">
                   
                   <li className="menuClass border border-b-sky-200
-
-                  "><Link href="#">Newsletter</Link>
+                  "><Link href="#" onClick={handleClick}>Newsletter</Link>
                   </li>
                   <li className="menuClass border border-b-sky-200 hover:bg-slate-900
                   ">
                     <Link href="#">Year book</Link>
-
                   </li>
 
 

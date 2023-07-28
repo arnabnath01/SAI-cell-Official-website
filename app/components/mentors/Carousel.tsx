@@ -43,7 +43,7 @@ const Carousel = () => {
                 <h1 className="text-md">
                   {/* <Link href="/"> */}
                     <div className="no-underline hover:underline hover:text-blue-400 text-black">{image.name}</div>
-                  {/* </Link> */}
+                  {/* </Link> */} 
                 </h1>
               </header>
             </article>

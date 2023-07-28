@@ -22,6 +22,7 @@ border: none;
   .backgImage{
     background: url("/StAMP/stampLayout.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
   .container{
     -webkit-text-size-adjust: 100%;
