@@ -1,4 +1,4 @@
-'use client';
+
 import "@/styles/About.css";
 import { EB_Garamond } from 'next/font/google'
 

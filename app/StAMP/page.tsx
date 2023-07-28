@@ -1,4 +1,3 @@
-'use client'
 
 import '@/styles/StAMP.css'
 import Link from "next/link"

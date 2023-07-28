@@ -1,4 +1,4 @@
-"use client"
+
 import ProfileCard from "../components/ProfileCard";
 
 const PresentMembers = () => {

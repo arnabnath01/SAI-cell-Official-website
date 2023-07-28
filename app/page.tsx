@@ -1,4 +1,4 @@
-'use client'
+
 import About from "./about/page"
 import Event from "./components/event/page"
 import Carousel from "./components/Carousel"
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="">
       <Carousel />
-      <Event/>
+      {/* <Event/> */}
       <About />
       <Mentor />
     </div>
