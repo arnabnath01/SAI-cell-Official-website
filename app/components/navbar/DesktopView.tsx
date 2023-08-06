@@ -61,7 +61,7 @@ const DesktopView = () => {
             Initiatives
           </Link>
 
-          {/* ****After Hovering********* */}
+          {/* ****After clicking initiatives********* */}
           {onInitiativeHover && (
             <div
             onMouseEnter={()=>setOnInitiativeHover(true)}

@@ -1,7 +1,7 @@
 
 const page = () => {
     return (
-        <div className="px-[245px]">
+        <div className="max-md:px-2 px-[245px]">
             <h1 className="font-light text-center my-4 
             text-2xl">Alumni Recruit Connect</h1>
             <hr />

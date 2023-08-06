@@ -17,7 +17,6 @@ const MobileView = () => {
         setOnPublicationHover(!onPublicationHover);
     }
 
- 
         const handleClick = () => {
           window.open("/ENCORE2020.pdf", '_blank');
         };
@@ -63,18 +62,23 @@ const MobileView = () => {
                     </li>
 
                     <li className="text_effect nav-item"
-                        onClick={handleInitiativeHover}
+                        
 
                     >
                         <Link href="#"
-
+                    // onMouseEnter={()=>setOnInitiativeHover(true)}
+                    // onMouseLeave={()=>setOnInitiativeHover(false)}
+                    onClick={handleInitiativeHover}
                         >Initiatives </Link>
                     </li>
 
 
 
                     {onInitiativeHover && (
-                        <div className="
+                        <div 
+                        // onMouseEnter={()=>setOnInitiativeHover(true)}
+                        // onMouseLeave={()=>setOnInitiativeHover(false)}
+                        className="
                         flex
                         flex-col
                         w-1/2
@@ -82,24 +86,22 @@ const MobileView = () => {
                     rounded
                     ml-2
                     ">
-                            <ul className="w-">
-                                <li className="menuClass border-b-sky-200
-
+                            <ul className="">
+                                <li className="menuClass  border-white-300 rounded-md 
                                 "><Link href="/StAMP">Student Alumni Mentorship Programme (StAMP)</Link></li>
-
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/AIM">Alumni Internship Mentorship (AIM)</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/ARC">Alumni Recruit Connect (ARC)</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/comming_soon">NITDian branding</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/comming_soon">NITDian brand store</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/comming_soon">NITDian campus tour</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/comming_soon">Alumni Grand Meet</Link></li>
-                                <li className="menuClass border-b-sky-200
+                                <li className="menuClass border border-gray-300 rounded-md
                                 "><Link href="/comming_soon">Student Alumni Meet</Link></li>
                             </ul>
                         </div>
@@ -133,19 +135,18 @@ const MobileView = () => {
                         flex
                         flex-col
                         w-1/2
-                    bg-black/60 
+                    bg-black/60
                     rounded
                     ml-2
                     ">
                              <ul className="">
-                                    <li className="menuClass border-b-sky-200
+                                    <li className="menuClass border border-gray-300 rounded-md
 
                                 ">
-                                    <Link href="#" onClick={handleClick}>Newsletter</Link>
+                                    <Link href="#" >Newsletter</Link>
                                     </li>
-
-                                <li className="menuClass border-b-sky-200
-                                "><Link href="#">Year Book</Link>
+                                <li className="menuClass border border-gray-300 rounded-md
+                                "><Link href="#" onClick={handleClick}>Year Book</Link>
                                 </li>
 
                              </ul>

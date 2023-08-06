@@ -7,9 +7,9 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div>
+    <div className="max-md:px-4 dark:bg-gray-800">
       {/* =======FOOTER TOP===========*/}
-      <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 ">
+      <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 overflow-hidden ">
         <div className="container flex flex-col justify-center py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 
           <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
@@ -25,8 +25,8 @@ function Footer() {
 
                 <ul className="space-y-1  list-disc list-inside" >
                   <li className="hover:underline">
-                    <Link rel="noopener noreferrer"  
-                    href="#">Message from</Link>
+                    <Link rel="noopener noreferrer"
+                      href="#">Message from</Link>
                   </li>
                   <li>
                     <Link rel="noopener noreferrer" className="hover:underline" href="#">Coordinator</Link>
@@ -88,19 +88,19 @@ function Footer() {
               <div className="max-md:flex flex-col">
                 <div className="mb-4">
                   <h3 className="text-orange-600">MAIL</h3>
-                 <Link href="#">alumni@admin.nitdgp.ac.in</Link>
+                  <Link href="#">alumni@admin.nitdgp.ac.in</Link>
                 </div>
-              <hr />
+                <hr />
                 <div className="mt-4">
                   <h3 className="text-orange-600">LOCATION</h3>
-                 <p className=" my-6 text-justify">Centre for Alumni Affairs & International Relations(C-AAIR)
-2nd Floor, S. N. Ray Memorial Building
-NIT Durgapur. <br />
-Durgapur-713209,<br /> West Bengal, INDIA</p>
+                  <p className=" my-6 text-justify">Centre for Alumni Affairs & International Relations(C-AAIR)
+                    2nd Floor, S. N. Ray Memorial Building
+                    NIT Durgapur. <br />
+                    Durgapur-713209,<br /> West Bengal, INDIA</p>
                 </div>
-                
+
               </div>
-            
+
             </div>
             <div className="space-y-1 justify-center ">
               <div className="uppercase text-orange-600 ">Social media</div>

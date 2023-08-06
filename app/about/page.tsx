@@ -10,9 +10,8 @@ const inter = EB_Garamond({
 function About() {
   return (
     <>
-      <div className="px-12 text-white bg " id="about" >
-        <h1 className={`text-5xl subpixel-antialiased text-center  header1 ${inter.className}`} >
-
+      <div className="px-12 max-sm:px-1 text-white bg " id="about" >
+        <h1 className={`text-5xl subpixel-antialiased text-center  header1 ${inter.className} sm:mx- `} >
           About SAI Cell
         </h1>
         <h2 className="text-2xl subpixel-antialiased text-center mt-2 mb-5 header1">

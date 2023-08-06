@@ -10,8 +10,6 @@ const page = () => {
                 alt='comming_soon'
                 width={1000} height={1000} />
         </div>
-
-
     )
 }
 
