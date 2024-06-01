@@ -11,7 +11,7 @@ const Home = () => {
     <div className="flex flex-col">
       <Carousel />
 
-      <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8  md:items-center">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8  md:items-center">
         <Logo />
         <Countdown
           timeTillDate={"02 06 2024, 06:00 pm"} //"01 04 2024, 08:00 pm"

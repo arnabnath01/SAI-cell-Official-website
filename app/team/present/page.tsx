@@ -83,10 +83,10 @@ const PresentMembers = () => {
      details: "4th Year, ME",
    },
    {
-     firstname: "Soumyadip ",
+     firstname: "Soumyadip",
      lastname: "Debnath",
      role: "Event Head",
-     imageUrl: "/teams/present/officialBearer/Soumyadip_Debnath.jpg",
+     imageUrl: "/teams/present/officialBearer/SOUMYADIP_DEBNATH.jpg",
      details: "4th Year, ME",
    },
    {

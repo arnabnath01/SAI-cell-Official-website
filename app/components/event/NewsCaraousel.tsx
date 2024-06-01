@@ -84,7 +84,7 @@ const startAnim = (array: Element[]) => {
             </div>
         </div>
     );
- 
+
 };
 
 export default NewsCaraousel;
