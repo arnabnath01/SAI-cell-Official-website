@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Logo = () => {
   return (
-    <div className="md:items-center md:justify-center">
+    <div className="">
       <Image
         className="rounded-full"
         src="/logo-pics/saic_logo.jpg"
