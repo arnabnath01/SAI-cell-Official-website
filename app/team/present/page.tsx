@@ -133,14 +133,15 @@ const PresentMembers = () => {
      details: "4th Year, ME",
    },
  ];
-  //executive members details
 
+
+  //executive members details
 const executiveMembers = [
   {
     firstname: "SAI KUMAR ",
     lastname: "ADIREDDY",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/SAIKUMAR_ADIREDDY.jpg",
+    imageUrl: "/teams/present/executiveMembers/SAIKUMAR_ADIREDDY.jpg",
     details: "3rd year, ME",
   },
 
@@ -148,7 +149,7 @@ const executiveMembers = [
     firstname: "KANIKICHARLA ",
     lastname: "BALA GANESH",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/KANIKICHARLA_BALAGANESH.jpg",
+    imageUrl: "/teams/present/executiveMembers/KANIKICHARLA_BALAGANESH.jpg",
     details: "3rd year, CSE",
   },
 
@@ -156,7 +157,7 @@ const executiveMembers = [
     firstname: "PAPPU ",
     lastname: "SHARMILA",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/PAPPU_SHARMILA.jpg",
+    imageUrl: "/teams/present/executiveMembers/PAPPU_SHARMILA.jpg",
     details: "3rd year, ECE",
   },
 
@@ -164,7 +165,7 @@ const executiveMembers = [
     firstname: "R S B Bikarna ",
     lastname: "Baidya",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/R S B Bikarna_Baidya.jpg",
+    imageUrl: "/teams/present/executiveMembers/R S B Bikarna_Baidya.jpg",
     details: "3rd year, CE",
   },
 
@@ -172,7 +173,7 @@ const executiveMembers = [
     firstname: "Supriyo ",
     lastname: "Mondal",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Supriyo_Mondal.jpg",
+    imageUrl: "/teams/present/executiveMembers/Supriyo_Mondal.jpg",
     details: "3rd year, CE",
   },
 
@@ -180,7 +181,7 @@ const executiveMembers = [
     firstname: "Vishal ",
     lastname: "Gupta",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Vishal_Gupta.jpg",
+    imageUrl: "/teams/present/executiveMembers/Vishal_Gupta.jpg",
     details: "3rd year, ME",
   },
 
@@ -188,7 +189,7 @@ const executiveMembers = [
     firstname: "Sanjib ",
     lastname: "Maity",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/SANJIB_MAITY.jpg",
+    imageUrl: "/teams/present/executiveMembers/SANJIB_MAITY.jpg",
     details: "3rd year, MME",
   },
 
@@ -196,14 +197,14 @@ const executiveMembers = [
     firstname: "Swarnim ",
     lastname: "Suryansh",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Swarnim_Suryansh.jpg",
+    imageUrl: "/teams/present/executiveMembers/Swarnim_Suryansh.jpg",
     details: "3rd year, MME",
   },
   {
     firstname: "Rahul ",
     lastname: "Mondal",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Rahul_Mondal.jpg",
+    imageUrl: "/teams/present/executiveMembers/Rahul_Mondal.jpg",
     details: "3rd year, ME",
   },
 
@@ -211,7 +212,7 @@ const executiveMembers = [
     firstname: "Soumili ",
     lastname: "Ghosh",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Soumili_Ghosh.jpg",
+    imageUrl: "/teams/present/executiveMembers/Soumili_Ghosh.jpg",
     details: "3rd year, MME",
   },
 
@@ -219,7 +220,7 @@ const executiveMembers = [
     firstname: "Katravath ",
     lastname: "Navya",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Katravath_Navya.jpg",
+    imageUrl: "/teams/present/executiveMembers/Katravath_Navya.jpg",
     details: "3rd year, ME",
   },
 
@@ -227,7 +228,7 @@ const executiveMembers = [
     firstname: "Pratishtha ",
     lastname: "Barua",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Pratishtha_Barua.jpg",
+    imageUrl: "/teams/present/executiveMembers/Pratishtha_Barua.jpg",
     details: "3rd year, EE",
   },
 
@@ -235,7 +236,7 @@ const executiveMembers = [
     firstname: "Soumi ",
     lastname: "Ghosh",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Soumi_Ghosh.jpg",
+    imageUrl: "/teams/present/executiveMembers/Soumi_Ghosh.jpg",
     details: "3rd year, CH",
   },
 
@@ -243,7 +244,7 @@ const executiveMembers = [
     firstname: "Souhardya ",
     lastname: "Majumder",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Souhardya_Majumder.jpg",
+    imageUrl: "/teams/present/executiveMembers/Souhardya_Majumder.jpg",
     details: "3rd year, ECE",
   },
 
@@ -251,7 +252,7 @@ const executiveMembers = [
     firstname: "Uppada ",
     lastname: "Sravanthi",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Uppada_Sravanthi.jpg",
+    imageUrl: "/teams/present/executiveMembers/Uppada_Sravanthi.jpg",
     details: "3rd year, ME",
   },
 
@@ -259,14 +260,14 @@ const executiveMembers = [
     firstname: "Reshmi ",
     lastname: "Saha",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Reshmi_Saha.jpg",
+    imageUrl: "/teams/present/executiveMembers/Reshmi_Saha.jpg",
     details: "3rd year, ECE",
   },
   {
     firstname: "Deepjyoti ",
     lastname: "Dutta",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/Deepjyoti_Dutta.jpg",
+    imageUrl: "/teams/present/executiveMembers/Deepjyoti_Dutta.jpg",
     details: "3rd year, CE",
   },
 ];
@@ -276,7 +277,7 @@ const executiveMembers = [
       firstname: "Avisikta",
       lastname: "Mandal",
       role: " SAIC Member",
-      imageUrl: "/teams/present/Avisikta_Mondal.jpg",
+      imageUrl: "/teams/present/cellMembers/Avisikta_Mandal.jpg",
       details: "2nd year, ME",
     },
 
@@ -284,84 +285,84 @@ const executiveMembers = [
       firstname: "PRAKASH CH.",
       lastname: "DAS",
       role: "SAIC Member",
-      imageUrl: "/teams/present/PRAKASH CH._DAS.jpg",
+      imageUrl: "/teams/present/cellMembers/PRAKASHCHANDRA_DAS.jpg",
       details: "2nd year, MME",
     },
     {
       firstname: "Jaswika Mithram ",
       lastname: "Kilaru",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Jaswika Mithram_Kilaru.jpg",
+      imageUrl: "/teams/present/cellMembers/Jaswika_Mithram.jpg",
       details: "2nd year, CSE",
     },
     {
       firstname: "SATYAKE",
       lastname: "SADHUKAN",
       role: "SAIC Member",
-      imageUrl: "/teams/present/SATYAKE_SADHUKAN.jpg",
+      imageUrl: "/teams/present/cellMembers/Satyake_Sadhukhan.jpg",
       details: "2nd year, MME",
     },
     {
       firstname: "Galipelly",
       lastname: "Sriram",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Galipelly_Sriram.jpg",
+      imageUrl: "/teams/present/cellMembers/Galipelly_Sriram.jpg",
       details: "2nd year, CE",
     },
     {
       firstname: "Anagh",
       lastname: "Sinha",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Anagh_Sinha.jpg",
+      imageUrl: "/teams/present/cellMembers/Anagh_Sinha.jpg",
       details: "2nd year, ME",
     },
     {
       firstname: "SAFIYA TASNEEM",
       lastname: "SHAIK",
       role: "SAIC Member",
-      imageUrl: "/teams/present/SAFIYA TASNEEM_SHAIK.jpg",
+      imageUrl: "/teams/present/cellMembers/SAFIYA_TASNEEM_SHAIK.jpg",
       details: "2nd year, ME",
     },
     {
       firstname: "Aparup",
       lastname: "Goswami",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Aparup_Goswami.jpg",
+      imageUrl: "/teams/present/cellMembers/Aparup_Goswami.jpg",
       details: "2nd year, MME",
     },
     {
       firstname: "Sagar ",
       lastname: "Murmu",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Sagar_Murmu.jpg",
+      imageUrl: "/teams/present/cellMembers/Sagar_Murmu.jpg",
       details: "2nd year, ME",
     },
     {
       firstname: "Joys ",
       lastname: "Pakalapati",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Joys_Pakalapati.jpg",
+      imageUrl: "/teams/present/cellMembers/Joys_pakalapati.jpg",
       details: "2nd year, ME",
     },
     {
       firstname: "Tulasi ",
-      lastname: "Patra",
+      lastname: "Pottella",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Tulasi_Patra.jpg",
+      imageUrl: "/teams/present/cellMembers/Tulasi_pottella.jpg",
       details: "2nd year, ME",
     },
     {
-      firstname: "",
-      lastname: "Pottella",
+      firstname: "Kamal Kanta",
+      lastname: "Patra",
       role: "SAIC Member",
-      imageUrl: "/teams/present/_Pottella.jpg",
+      imageUrl: "/teams/present/cellMembers/KamalKanta_Patra.jpg",
       details: "2nd year, ME",
     },
     {
       firstname: "Subhamita",
       lastname: "Halder",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Subhamita_Halder.jpg",
+      imageUrl: "/teams/present/cellMembers/Subhamita_Halder.jpg",
       details: "2nd year, CSE",
     },
 
@@ -369,15 +370,23 @@ const executiveMembers = [
       firstname: "Riya",
       lastname: "Singh",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Riya_Singh.jpg",
+      imageUrl: "/teams/present/cellMembers/Riya_Singh.jpeg",
       details: "2nd year, CE",
     },
     {
       firstname: "Mandala",
       lastname: "Bharadwaj",
       role: "SAIC Member",
-      imageUrl: "/teams/present/Mandala_Bharadwaj.jpg",
+      imageUrl: "/teams/present/cellMembers/Mandala_Bharadwaj.jpg",
       details: "2nd year, CSE",
+    },
+
+    {
+      firstname: "Sourasish",
+      lastname: "Das",
+      role: "SAIC Member",
+      imageUrl: "/teams/present/cellMembers/Sourasish_Das.jpg",
+      details: "2nd year, CE",
     },
   ];
 
