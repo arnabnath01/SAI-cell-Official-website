@@ -170,6 +170,9 @@ const DesktopView = () => {
                   <li className="menuClass border border-b-sky-200
                   "><Link href="#" onClick={handleClick}>Newsletter</Link>
                   </li>
+                  <li className="menuClass border border-b-sky-200
+                  "><Link href="/chronicles" >Chronicles</Link>
+                  </li>
                   <li className="menuClass border border-b-sky-200 hover:bg-slate-900
                   ">
                     <Link href="#">Year book</Link>

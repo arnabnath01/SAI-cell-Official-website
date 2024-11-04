@@ -395,7 +395,7 @@ const executiveMembers = [
 
  useEffect(() => {
    const handleResize = () => {
-     setIsMobile(window.innerWidth <= 768);
+     setIsMobile(window.innerWidth <= 900);
    };
 
    handleResize(); // Check initial screen size
@@ -409,7 +409,7 @@ const executiveMembers = [
 
 
   return (
-    <div className="flex flex-col py-16  ml-16 " style={{ paddingTop: "30px" }}>
+    <div className="flex flex-col py-16   " style={{ paddingTop: "30px" }}>
       {/* official bearers */}
       <h3 className="text-center text-orange-600 text-4xl">
         Office Bearers (2024-2025)
@@ -439,13 +439,15 @@ const executiveMembers = [
                 details={member.details}
               />
             ) : (
-              <ProfileCard
-                firstname={member.firstname}
-                lastname={member.lastname}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                details={member.details}
-              />
+              <div className="ml-24">
+                <ProfileCard
+                  firstname={member.firstname}
+                  lastname={member.lastname}
+                  role={member.role}
+                  imageUrl={member.imageUrl}
+                  details={member.details}
+                />
+              </div>
             )}
           </div>
         ))}
@@ -456,8 +458,9 @@ const executiveMembers = [
       <h3 className="mt-5 text-center text-orange-600 text-4xl">
         SAIC Executive Member
       </h3>
+
       <div
-        className="grid grid-cols-1 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6 max-md:pl-20  md:pl-40"
+        className="grid grid-cols-1 md:grid-cols-3  my-7 px-3 md:mx-[30px]"
         style={{
           display: "grid",
           justifyContent: "center",
@@ -480,13 +483,15 @@ const executiveMembers = [
                 details={member.details}
               />
             ) : (
-              <ProfileCard
-                firstname={member.firstname}
-                lastname={member.lastname}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                details={member.details}
-              />
+              <div className="ml-24">
+                <ProfileCard
+                  firstname={member.firstname}
+                  lastname={member.lastname}
+                  role={member.role}
+                  imageUrl={member.imageUrl}
+                  details={member.details}
+                />
+              </div>
             )}
           </div>
         ))}
@@ -498,8 +503,9 @@ const executiveMembers = [
       <h3 className="mt-5 text-center text-orange-600 text-4xl">
         SAI Cell Member
       </h3>
+
       <div
-        className="grid grid-cols-1 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6  pl-40"
+        className="grid grid-cols-1 md:grid-cols-3  my-7 px-3 md:mx-[30px]"
         style={{
           display: "grid",
           justifyContent: "center",
@@ -522,13 +528,15 @@ const executiveMembers = [
                 details={member.details}
               />
             ) : (
-              <ProfileCard
-                firstname={member.firstname}
-                lastname={member.lastname}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                details={member.details}
-              />
+              <div className="ml-24">
+                <ProfileCard
+                  firstname={member.firstname}
+                  lastname={member.lastname}
+                  role={member.role}
+                  imageUrl={member.imageUrl}
+                  details={member.details}
+                />
+              </div>
             )}
           </div>
         ))}

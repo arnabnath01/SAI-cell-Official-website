@@ -1,11 +1,11 @@
-
+"use client";
+import { useEffect, useState } from "react";
 import ProfileCard from "../components/ProfileCard";
+import ProfileCardMobile from "../components/ProfileCardMobile";
 
 const PresentMembers = () => {
-
   //former members details
   const formerMembers = [
-
     // 2024 batch
     {
       firstname: "Arnab",
@@ -56,12 +56,9 @@ const PresentMembers = () => {
       role: "General Secretary",
       imageUrl: "/teams/former/Souvik Pal_BT.jpg",
       details: "Class Of 2024, B.TECH BT",
-    }
-
-
+    },
 
     // before 2024
-    ,
     {
       firstname: "Chandrima",
       lastname: "Roy Choudhury",
@@ -422,27 +419,66 @@ const PresentMembers = () => {
     },
   ];
 
-return (
-  <div className="flex flex-col py-16 px-30" style={{ paddingTop: '30px' }}>
+  const [isMobile, setIsMobile] = useState(false);
 
-  {/* official bearers */}
-  <h3 className="text-center text-orange-600 text-4xl">Office Bearers (2023-2024)</h3>
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
 
-  <div className="grid grid-cols-2 md:grid-cols-4 my-7 px-3 md:mx-[30px] py-6  pl-40" style={{ display: 'grid', justifyContent: 'center', alignContent: 'center' }}>
-    {formerMembers.map((member, index) => (
-      <div key={index} className="mb-8 items-center justify-between mx-auto" style={{ justifySelf: 'center', alignSelf: 'center' }}>
-        <ProfileCard
-          firstname={member.firstname}
-          lastname={member.lastname}
-          role={member.role}
-          imageUrl={member.imageUrl}
-          details={member.details}
-        />
+    handleResize(); // Check initial screen size
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <div className="flex flex-col py-16 px-30" style={{ paddingTop: "30px" }}>
+      {/* official bearers */}
+      <h3 className="text-center text-orange-600 text-4xl">
+        Office Bearers (2023-2024)
+      </h3>
+
+      <div
+        className="grid grid-cols-1 md:grid-cols-3  my-7 px-3 md:mx-[30px]"
+        style={{
+          display: "grid",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
+        {formerMembers.map((member, index) => (
+          <div
+            key={index}
+            className="mb-8 items-center justify-between mx-auto"
+            style={{ justifySelf: "center", alignSelf: "center" }}
+          >
+            {isMobile ? (
+              //  this card will be shown in mobile devices
+              <ProfileCardMobile
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            ) : (
+              <div className="ml-24">
+                <ProfileCard
+                  firstname={member.firstname}
+                  lastname={member.lastname}
+                  role={member.role}
+                  imageUrl={member.imageUrl}
+                  details={member.details}
+                />
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-
-  </div>
+    </div>
   );
 };
 

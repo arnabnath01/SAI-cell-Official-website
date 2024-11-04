@@ -22,8 +22,8 @@ const MobileView = () => {
         };
 
     return (
-        <div
-            className="
+      <div
+        className="
           max-md:relative
           bg-yellow-400
           rounded-md
@@ -37,9 +37,9 @@ const MobileView = () => {
           my-0
           mx-0
           "
-        >
-            <div
-                className="flex
+      >
+        <div
+          className="flex
             flex-col
             cursor-pointer
             items-left
@@ -47,70 +47,102 @@ const MobileView = () => {
             additionals
             pl-5
             "
-            >
-                <ul className="flex 
+        >
+          <ul
+            className="flex 
             flex-col 
             space-x-4
             space-y-3
-            " >
+            "
+          >
+            <li className="text_effect ml-4 nav-item">
+              <Link href="https://alumnitdgp.in/">Home</Link>
+            </li>
 
+            <li className="text_effect nav-item">
+              <Link href="/about">About SAIC </Link>
+            </li>
 
-                    <li className="text_effect ml-4 nav-item"><Link href="https://alumnitdgp.in/">Home</Link></li>
+            <li className="text_effect nav-item">
+              <Link
+                href="#"
+                // onMouseEnter={()=>setOnInitiativeHover(true)}
+                // onMouseLeave={()=>setOnInitiativeHover(false)}
+                onClick={handleInitiativeHover}
+              >
+                Initiatives{" "}
+              </Link>
+            </li>
 
-                    <li className="text_effect nav-item">
-                        <Link href="/about">About SAIC </Link>
-                    </li>
-
-                    <li className="text_effect nav-item"
-                        
-
-                    >
-                        <Link href="#"
-                    // onMouseEnter={()=>setOnInitiativeHover(true)}
-                    // onMouseLeave={()=>setOnInitiativeHover(false)}
-                    onClick={handleInitiativeHover}
-                        >Initiatives </Link>
-                    </li>
-
-
-
-                    {onInitiativeHover && (
-                        <div 
-                        // onMouseEnter={()=>setOnInitiativeHover(true)}
-                        // onMouseLeave={()=>setOnInitiativeHover(false)}
-                        className="
+            {onInitiativeHover && (
+              <div
+                // onMouseEnter={()=>setOnInitiativeHover(true)}
+                // onMouseLeave={()=>setOnInitiativeHover(false)}
+                className="
                         flex
                         flex-col
                         w-1/2
                     bg-black/60 
                     rounded
                     ml-2
-                    ">
-                            <ul className="">
-                                <li className="menuClass  border-white-300 rounded-md 
-                                "><Link href="/StAMP">Student Alumni Mentorship Programme (StAMP)</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/AIM">Alumni Internship Mentorship (AIM)</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/ARC">Alumni Recruit Connect (ARC)</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/comming_soon">NITDian branding</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/comming_soon">NITDian brand store</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/comming_soon">NITDian campus tour</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/comming_soon">Alumni Grand Meet</Link></li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="/comming_soon">Student Alumni Meet</Link></li>
-                            </ul>
-                        </div>
-                    )
+                    "
+              >
+                <ul className="">
+                  <li
+                    className="menuClass  border-white-300 rounded-md 
+                                "
+                  >
+                    <Link href="/StAMP">
+                      Student Alumni Mentorship Programme (StAMP)
+                    </Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/AIM">Alumni Internship Mentorship (AIM)</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/ARC">Alumni Recruit Connect (ARC)</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/comming_soon">NITDian branding</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/comming_soon">NITDian brand store</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/comming_soon">NITDian campus tour</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/comming_soon">Alumni Grand Meet</Link>
+                  </li>
+                  <li
+                    className="menuClass border border-gray-300 rounded-md
+                                "
+                  >
+                    <Link href="/comming_soon">Student Alumni Meet</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
 
-                    }
-
-
-                    {/* <li className=" ">
+            {/* <li className=" ">
       <Link href="#" className=" -toggle" data-toggle=" " role="button" aria-haspopup="true" aria-expanded="false">Events</Link>
       <ul className=" ">
         <li><a  className="menuClass" href=" coming_soon_html.php">Grand Alumni Homecoming</a></li>
@@ -122,51 +154,57 @@ const MobileView = () => {
       
   </li> */}
 
+            <li className="text_effect nav-item">
+              <Link className="" onClick={handlePublicationHover} href="#">
+                Publication{" "}
+              </Link>
 
-
-
-                    <li className="text_effect nav-item">
-                        <Link className=""
-                            onClick={handlePublicationHover}
-                            href="#">Publication </Link>
-
-                        {onPublicationHover && (
-                            <div className="
+              {onPublicationHover && (
+                <div
+                  className="
                         flex
                         flex-col
                         w-1/2
                     bg-black/60
                     rounded
                     ml-2
-                    ">
-                             <ul className="">
-                                    <li className="menuClass border border-gray-300 rounded-md
-
-                                ">
-                                    <Link href="#" >Newsletter</Link>
-                                    </li>
-                                <li className="menuClass border border-gray-300 rounded-md
-                                "><Link href="#" onClick={handleClick}>Year Book</Link>
-                                </li>
-
-                             </ul>
-
-
-                            </div>
-                        )
-
-                        }
+                    "
+                >
+                  <ul className="">
+                    <li
+                      className="menuClass border border-gray-300 rounded-md
+                                "
+                    >
+                      <Link href="#">Newsletter</Link>
                     </li>
-
-                    <li className=" text_effect nav-item">
-                        <Link className="menuClass" href="/team">The Team</Link>
+                    <li
+                      className="menuClass border border-gray-300 rounded-md
+                                "
+                    >
+                      <Link href="/chronicles">Chronicles </Link>
                     </li>
+                    <li
+                      className="menuClass border border-gray-300 rounded-md
+                                "
+                    >
+                      <Link href="#" onClick={handleClick}>
+                        Year Book
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
 
-
-                </ul>
-            </div>
+            <li className=" text_effect nav-item">
+              <Link className="menuClass" href="/team">
+                The Team
+              </Link>
+            </li>
+          </ul>
         </div>
-    )
+      </div>
+    );
 }
 
 export default MobileView

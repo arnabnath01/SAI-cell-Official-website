@@ -3,8 +3,20 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = () => {
-  // Set target date to a specific date and time
-  const targetDate = new Date("2023-01-01T00:00:00").getTime();
+  // Set target date to a specific date and time, FORMAT: 2023-01-01T00:00:00
+  {
+    /*
+    YYYY: Four-digit year
+    MM: Two-digit month (01-12)
+    DD: Two-digit day of the month (01-31)
+    T: The letter 'T' as a separator
+    HH: Two-digit hour in 24-hour format (00-23)
+    MM: Two-digit minutes (00-59)
+    SS: Two-digit seconds (00-59)
+    
+    */
+  }
+ const targetDate = new Date("2024-12-25T10:30:00").getTime();
   const [time, setTime] = useState({
     days: "00",
     hours: "00",
