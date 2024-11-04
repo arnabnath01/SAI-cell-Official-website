@@ -1,0 +1,44 @@
+.profile-card-mobile {
+  background-color: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Clip children */
+  text-align: center; /* Center text */
+  padding: 16px; /* Padding inside the card */
+  margin: 16px; /* Margin around the card */
+  max-width: 300px; /* Maximum width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.profile-card-mobile:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.profile-card-mobile img {
+  width: 100%; /* Full width image */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #f0f0f0; /* Border below the image */
+}
+
+.profile-card-mobile h2 {
+  font-size: 1.5rem; /* Larger font size */
+  margin: 16px 0 8px; /* Margin around the heading */
+  color: #333; /* Darker text color */
+}
+
+.profile-card-mobile p {
+  font-size: 1rem; /* Normal font size */
+  color: #666; /* Gray text color */
+  margin: 8px 0; /* Margin around the paragraphs */
+}
+
+.profile-card-mobile .role {
+  font-weight: bold; /* Bold text for role */
+  color: #007bff; /* Primary color for role */
+}
+
+.profile-card-mobile .details {
+  font-size: 0.875rem; /* Smaller font size for details */
+  color: #999; /* Lighter gray text color */
+}

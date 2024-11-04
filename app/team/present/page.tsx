@@ -1,5 +1,8 @@
-
+"use client";
+import { useEffect, useState } from "react";
 import ProfileCard from "../components/ProfileCard";
+import ProfileCardMobile from "../components/ProfileCardMobile";
+import TeamGrid from '../components/TeamCard';
 
 const PresentMembers = () => {
   // official members details
@@ -165,7 +168,7 @@ const executiveMembers = [
     firstname: "R S B Bikarna ",
     lastname: "Baidya",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/executiveMembers/R S B Bikarna_Baidya.jpg",
+    imageUrl: "/teams/present/executiveMembers/Bikarna_Baidya.jpg",
     details: "3rd year, CE",
   },
 
@@ -197,7 +200,7 @@ const executiveMembers = [
     firstname: "Swarnim ",
     lastname: "Suryansh",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/executiveMembers/Swarnim_Suryansh.jpg",
+    imageUrl: "/teams/present/executiveMembers/Swarnim_Suryansh.jpeg",
     details: "3rd year, MME",
   },
   {
@@ -244,7 +247,7 @@ const executiveMembers = [
     firstname: "Souhardya ",
     lastname: "Majumder",
     role: "SAIC Executive Member",
-    imageUrl: "/teams/present/executiveMembers/Souhardya_Majumder.jpg",
+    imageUrl: "/teams/present/executiveMembers/Souhardya_Majumder.png",
     details: "3rd year, ECE",
   },
 
@@ -263,13 +266,7 @@ const executiveMembers = [
     imageUrl: "/teams/present/executiveMembers/Reshmi_Saha.jpg",
     details: "3rd year, ECE",
   },
-  {
-    firstname: "Deepjyoti ",
-    lastname: "Dutta",
-    role: "SAIC Executive Member",
-    imageUrl: "/teams/present/executiveMembers/Deepjyoti_Dutta.jpg",
-    details: "3rd year, CE",
-  },
+  
 ];
 
   const cellMembers = [
@@ -390,15 +387,36 @@ const executiveMembers = [
     },
   ];
 
+
+
+
+
+ const [isMobile, setIsMobile] = useState(false);
+
+ useEffect(() => {
+   const handleResize = () => {
+     setIsMobile(window.innerWidth <= 768);
+   };
+
+   handleResize(); // Check initial screen size
+   window.addEventListener("resize", handleResize);
+
+   return () => {
+     window.removeEventListener("resize", handleResize);
+   };
+ }, []);
+
+
+
   return (
-    <div className="flex flex-col py-16 px-30 " style={{ paddingTop: "30px" }}>
+    <div className="flex flex-col py-16  ml-16 " style={{ paddingTop: "30px" }}>
       {/* official bearers */}
       <h3 className="text-center text-orange-600 text-4xl">
         Office Bearers (2024-2025)
       </h3>
 
       <div
-        className="grid grid-cols-2 md:grid-cols-3  my-7 px-3 md:mx-[30px] py-6  pl-40"
+        className="grid grid-cols-1 md:grid-cols-3  my-7 px-3 md:mx-[30px]"
         style={{
           display: "grid",
           justifyContent: "center",
@@ -411,13 +429,24 @@ const executiveMembers = [
             className="mb-8 items-center justify-between mx-auto"
             style={{ justifySelf: "center", alignSelf: "center" }}
           >
-            <ProfileCard
-              firstname={member.firstname}
-              lastname={member.lastname}
-              role={member.role}
-              imageUrl={member.imageUrl}
-              details={member.details}
-            />
+            {isMobile ? (
+              //  this card will be shown in mobile devices
+              <ProfileCardMobile
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            ) : (
+              <ProfileCard
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            )}
           </div>
         ))}
       </div>
@@ -428,7 +457,7 @@ const executiveMembers = [
         SAIC Executive Member
       </h3>
       <div
-        className="grid grid-cols-2 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6 max-md:pl-20  md:pl-40"
+        className="grid grid-cols-1 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6 max-md:pl-20  md:pl-40"
         style={{
           display: "grid",
           justifyContent: "center",
@@ -441,13 +470,24 @@ const executiveMembers = [
             className="mb-8 items-center justify-between mx-auto"
             style={{ justifySelf: "center", alignSelf: "center" }}
           >
-            <ProfileCard
-              firstname={member.firstname}
-              lastname={member.lastname}
-              role={member.role}
-              imageUrl={member.imageUrl}
-              details={member.details}
-            />
+            {isMobile ? (
+              //  this card will be shown in mobile devices
+              <ProfileCardMobile
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            ) : (
+              <ProfileCard
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            )}
           </div>
         ))}
       </div>
@@ -459,7 +499,7 @@ const executiveMembers = [
         SAI Cell Member
       </h3>
       <div
-        className="grid grid-cols-2 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6  pl-40"
+        className="grid grid-cols-1 md:grid-cols-3 my-7 px-3 md:mx-[30px] py-6  pl-40"
         style={{
           display: "grid",
           justifyContent: "center",
@@ -472,13 +512,24 @@ const executiveMembers = [
             className="mb-8 items-center justify-between mx-auto"
             style={{ justifySelf: "center", alignSelf: "center" }}
           >
-            <ProfileCard
-              firstname={member.firstname}
-              lastname={member.lastname}
-              role={member.role}
-              imageUrl={member.imageUrl}
-              details={member.details}
-            />
+            {isMobile ? (
+              //  this card will be shown in mobile devices
+              <ProfileCardMobile
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            ) : (
+              <ProfileCard
+                firstname={member.firstname}
+                lastname={member.lastname}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                details={member.details}
+              />
+            )}
           </div>
         ))}
       </div>
